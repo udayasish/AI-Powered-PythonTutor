@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // components/CallToActionSection.tsx
 const CallToActionSection = () => {
     return (
@@ -17,13 +19,18 @@ const CallToActionSection = () => {
               </div>
   
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <Link href={"/ai-tutor"}>
                 <button className="px-8 py-4 bg-white text-indigo-600 rounded-full text-lg font-semibold hover:bg-indigo-50 transform hover:scale-105 transition-all duration-300 shadow-lg group">
                   Get Started Now
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none ml-2">→</span>
                 </button>
+                </Link>
+
+                <Link href={"/ai-tutor"}>
                 <button className="px-8 py-4 bg-transparent text-white border-2 border-white rounded-full text-lg font-semibold hover:bg-white/10 transform hover:scale-105 transition-all duration-300">
                   Meet Your AI Tutor
                 </button>
+                </Link>
               </div>
   
               <div className="mt-8 flex justify-center space-x-6">
