@@ -19,7 +19,8 @@ const McqComponent = () => {
   // Fetch MCQs from the API
   const fetchMcqs = async () => {
     try {
-      const res = await fetch("/api/mcqs");
+      // const res = await fetch("/api/mcqs");
+      const res = await fetch("https://skc-udayasishbora-ai-powered-python-tutor-pykids.vercel.app/api/mcqs");
       if (!res.ok) throw new Error("Failed to fetch MCQs");
       const data = await res.json();
 
