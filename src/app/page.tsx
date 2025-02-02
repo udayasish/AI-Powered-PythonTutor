@@ -12,7 +12,7 @@ import { useState } from "react";
 
 
 export default function Home() {
-  const [aiTutor, setAiTutor] = useState(false);
+  const [setAiTutor] = useState(false);
  
   return (
     <div className="bg-[#3e82e7]">
