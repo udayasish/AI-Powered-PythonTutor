@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const HeroSection = ({ setAiTutor }: { setAiTutor: any }) => {
+const HeroSection = ({ setAiTutor }: { setAiTutor: (value: boolean) => void; aiTutor: boolean }) => {
   return (
     <section
       id="hero"

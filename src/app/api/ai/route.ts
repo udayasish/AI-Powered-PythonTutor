@@ -13,7 +13,7 @@ export async function POST(request: Request) {
         const genAI = new GoogleGenerativeAI(apiKey);
         const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
-        const { subject, level, question } = await request.json();
+        const { subject, question } = await request.json();
         const cleanedQuestion = question.trim().toLowerCase();
 
         // List of common greetings
@@ -62,6 +62,8 @@ export async function POST(request: Request) {
                 .replace(/```/g, "") // Remove code block markers
                 .trim(); // Trim extra spaces
         };
+
+
 
         // Construct JSON response with cleaned text
         return NextResponse.json({
