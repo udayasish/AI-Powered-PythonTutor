@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **AI-Powered Python Tutor for Children**
 
-## Getting Started
+Welcome to the AI-Powered Python Tutor! This application is designed to help children learn basic Python programming in a fun and engaging way. It features a child-friendly interface, an AI tutor powered by the Gemini API, and interactive MCQs with rewards.
 
-First, run the development server:
+---
 
+## **How to Run the Application**
+
+Follow these steps to set up and run the application on your local machine.
+
+### **Prerequisites**
+1. **Node.js**: Ensure you have Node.js installed. Download it from [here](https://nodejs.org/).
+2. **Gemini API Key**: Obtain an API key from the [Gemini website](https://gemini.google.com/).
+3. **Git**: Install Git to clone the repository. Download it from [here](https://git-scm.com/).
+
+---
+
+### **Step 1: Clone the Repository**
+Clone the repository to your local machine using the following command:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/udayasish/AI-Powered-PythonTutor.git
+cd AI-Powered-PythonTutor
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Step 2: Install Dependencies**
+Install the required dependencies by running:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### **Step 3: Set Up Environment Variables**
+1. Copy the `.env.sample` file to `.env`:
+   ```bash
+   cp .env.sample .env
+   ```
+2. Open the `.env` file and add your Gemini API key:
+   ```env
+   GEMINI_API_KEY=your_gemini_api_key_here
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Step 4: Run the Application**
+Start the development server by running:
+```bash
+npm run dev
+```
+The application will be available at `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### **Step 5: Configure API Key in the App**
+This is the API key that should be pasted in the .env file
+GEMINI_API_KEY=AIzaSyBzrvsjfndjtdMy2x-M6C_bjG7NCCobWB0
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## **Features**
+- **Child-Friendly Interface**: Bright, intuitive design with large buttons and animations.
+- **AI-Powered Tutoring**: Real-time explanations, answers, and coding challenges powered by the Gemini API.
+- **Interactive Homework Assignments**: Complete small coding tasks at the end of each lesson.
+
+---
+
+## **Hosted Application**
+The application is hosted on [Vercel]. You can access it at: (https://skc-udayasishbora-ai-powered-python-tutor-pykids.vercel.app/)
+
+
+Thank you for using the AI-Powered Python Tutor! Happy coding! 🚀
